@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dark Pattern Detector</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dark Pattern Detector</h1>
+      <p>Protecting you from manipulative design practices</p>
+    </header>
+    
+    <div class="status">
+      <div id="status-indicator" class="scanning">
+        <span id="status-text">Scanning page...</span>
+      </div>
+    </div>
+    
+    <div class="results">
+      <h2>Detected Patterns</h2>
+      <div id="patterns-list">
+        <!-- Patterns will be listed here -->
+      </div>
+    </div>
+    
+    <div class="settings">
+      <h2>Settings</h2>
+      <div class="toggle-container">
+        <label for="highlight-toggle">Highlight patterns on page</label>
+        <input type="checkbox" id="highlight-toggle" checked>
+      </div>
+      <div class="toggle-container">
+        <label for="notification-toggle">Show notifications</label>
+        <input type="checkbox" id="notification-toggle" checked>
+      </div>
+    </div>
+    
+    <footer>
+      <button id="report-btn">Report a dark pattern</button>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
