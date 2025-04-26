@@ -1,115 +1,65 @@
-```markdown project="Dark Pattern Detector" file="README.md"
-...
-```
+# Dark Pattern Detector
 
-git clone [https://github.com/yourusername/dark-pattern-detector.git](https://github.com/yourusername/dark-pattern-detector.git)
+![Dark Pattern Detector Logo](icons/icon128.png)
 
-```plaintext
+## 🛡️ Protecting Users from Manipulative Design Practices
 
-2. Open Chrome and navigate to `chrome://extensions/`
+Dark Pattern Detector is a Chrome extension that helps users identify and avoid manipulative design practices on websites. Dark patterns are deceptive UX/UI tricks that websites use to manipulate users into making decisions they might not otherwise make, such as buying products, subscribing to services, or sharing personal data.
 
-3. Enable "Developer mode" by clicking the toggle in the top-right corner
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-4. Click "Load unpacked" and select the folder containing the extension files
+## 🔍 What Are Dark Patterns?
 
-5. The extension should now be installed and active
+Dark patterns have been defined as any practices or deceptive design patterns amounting to misleading advertisement, unfair trade practices, or violation of consumer rights. This extension detects the following types of dark patterns:
 
-### For Users (Once Published)
+1. **False Urgency** - Creating a false sense of urgency to pressure users into making quick decisions
+2. **Basket Sneaking** - Adding items to a user's cart without their explicit consent
+3. **Confirm Shaming** - Using guilt or shame to discourage certain user choices
+4. **Forced Action** - Requiring users to perform unwanted actions to complete their intended task
+5. **Subscription Trap** - Making it difficult to unsubscribe from services
+6. **Interface Interference** - Manipulating the interface to guide users toward certain choices
+7. **Bait and Switch** - Advertising one thing but delivering another
+8. **Drip Pricing** - Revealing additional costs gradually during the checkout process
+9. **Disguised Advertisement** - Ads that don't look like ads
+10. **Nagging** - Repeatedly prompting users for the same action
 
-1. Visit the Chrome Web Store (link to be added once published)
-2. Click "Add to Chrome"
-3. Confirm the installation when prompted
+## ✨ Features
 
-## 💡 How It Works
+- **Real-time Detection**: Automatically scans websites for dark patterns as you browse
+- **Visual Highlighting**: Highlights detected dark patterns directly on the webpage with color-coded borders
+- **Informative Tooltips**: Shows tooltips explaining the type of dark pattern detected
+- **Pattern Summary**: Provides a summary of all detected patterns in the extension popup
+- **Customizable Settings**: Toggle highlighting and notifications on/off
+- **Badge Counter**: Shows the number of detected patterns on the extension icon
+- **Notifications**: Optional desktop notifications when dark patterns are detected
 
-1. **Detection Engine**: The extension scans web pages for common dark patterns using:
-- Text analysis for misleading language
-- DOM structure examination for hidden elements
-- Visual element inspection for misleading interfaces
+## 🛠️ Technology Stack
 
-2. **Pattern Identification**: Each type of dark pattern has specific detection algorithms:
-- False Urgency: Detects countdown timers and urgency phrases
-- Basket Sneaking: Identifies pre-checked boxes and automatic additions
-- Confirm Shaming: Finds guilt-inducing language in decline options
-- And so on for each pattern type
+- **JavaScript**: Core programming language for extension functionality
+- **Chrome Extension API**: For browser integration and extension functionality
+- **HTML/CSS**: For the extension's popup interface and webpage highlighting
+- **DOM Manipulation**: For analyzing webpage structure and detecting patterns
+- **MutationObserver API**: For detecting dynamically loaded content
+- **Chrome Storage API**: For saving user preferences
+- **Chrome Notifications API**: For desktop notifications
+- **React.js**: For future versions with more complex UI components (planned)
 
-3. **Visual Feedback**: When patterns are detected:
-- Elements are highlighted with pattern-specific colors
-- Tooltips explain the type of dark pattern
-- The extension badge shows the count of detected patterns
-
-4. **User Controls**: Through the popup interface, users can:
-- View all detected patterns with explanations
-- Toggle highlighting on/off
-- Enable/disable notifications
-- Report new dark patterns
-
-## 🔮 Future Enhancements
-
-- **React.js Integration**: Rebuilding the popup interface with React for more interactive features
-- **Pattern Database**: Creating a community-driven database of known dark patterns
-- **Machine Learning**: Implementing ML-based detection for more accurate pattern recognition
-- **Pattern Blocking**: Automatically blocking or modifying certain dark patterns
-- **Cross-browser Support**: Extending to Firefox, Safari, and other browsers
-- **Mobile Support**: Creating a mobile version for Android and iOS browsers
-- **Accessibility Improvements**: Ensuring the extension works well with screen readers and other assistive technologies
-- **Educational Resources**: Adding more information about each dark pattern type
-
-## 👥 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Report Dark Patterns**: If you find a dark pattern that the extension doesn't detect, please report it
-2. **Suggest Features**: Have an idea for a new feature? Open an issue to discuss it
-3. **Submit Pull Requests**: Code contributions are always welcome
-4. **Spread the Word**: Help others protect themselves by sharing this extension
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Thanks to all the researchers and advocates who have documented dark patterns
-- Special thanks to the open-source community for their invaluable tools and libraries
-- Inspired by the work of the [Dark Patterns](https://www.darkpatterns.org/) research initiative
-
-## 📞 Contact
-
-If you have any questions or feedback, please open an issue on this repository or contact the maintainer at [your-email@example.com](mailto:your-email@example.com).
-
----
-
-<p align="center">Made with ❤️ for a more ethical web</p>
-\`\`\`
-
-The README.md I've created provides a comprehensive overview of your Dark Pattern Detector Chrome extension. It explains what dark patterns are, how the extension works to detect them, and includes detailed information about the project structure and technology stack.
-
-As requested, I've included React.js in the technology stack section, positioning it as a planned technology for future versions with more complex UI components. This is a common approach for projects that plan to evolve their tech stack over time.
-
-The README is designed to be informative for both users and potential contributors, with clear sections on installation, usage, and future enhancements. It also includes placeholders for contact information and repository-specific links that you can customize.
-
-Some key highlights of this README:
-
-1. **Comprehensive Dark Pattern Explanations**: Detailed descriptions of all ten dark pattern types
-2. **Technical Details**: Clear explanation of how the detection engine works
-3. **Future Roadmap**: Specific mention of React.js integration as a planned enhancement
-4. **Visual Structure**: Well-organized with emojis and formatting for readability
-5. **Contributing Guidelines**: Clear instructions for how others can help improve the project
-
-This README should serve as an excellent introduction to your project on GitHub and help attract users and contributors.
-
-<Actions>
-<Action name="Create a CONTRIBUTING.md file" description="Add detailed guidelines for contributors" />
-<Action name="Add screenshots to the README" description="Include visual examples of the extension in action" />
-<Action name="Create a privacy policy" description="Add a document explaining how user data is handled" />
-<Action name="Implement React.js in the popup UI" description="Upgrade the popup interface using React components" />
-<Action name="Add unit tests" description="Create test cases for the dark pattern detection algorithms" />
-</Actions>
-
-\`\`\`
-
+## 📋 Project Structure
 
 ```
+dark-pattern-detector/
+├── manifest.json        # Extension configuration
+├── background.js        # Background script for extension
+├── content.js           # Content script for analyzing webpages
+├── content.css          # Styles for highlighting dark patterns
+├── popup.html           # Extension popup interface
+├── popup.js             # Popup functionality
+├── popup.css            # Popup styling
+└── icons/               # Extension icons
+    ├── icon16.png
+    ├── icon48.png
+    └── icon128.png
+```
+
+## 🚀 Installation
+
